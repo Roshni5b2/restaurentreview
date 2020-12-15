@@ -1,0 +1,77 @@
+.mainshop h2{
+    align-self: center;
+    font-size: 20px;
+    color: black;
+}
+.mainshop h1{
+    color:black;
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+mat-card{
+    margin-bottom: 20px;
+}
+.mainshop h4{
+    color: salmon;
+}
+.review{
+    width: 100%;
+    background:lavender;
+    padding:30px;
+    border: 2px solid lavender;
+}
+.myrevimage img{
+    float: right;
+    margin-top: 4px;
+    border-radius: 50px;
+}
+.mainshop .addreview .reviewing{
+    background: lavender;
+    border: 2px solid lavender;
+    padding: 10px;
+}
+.mainshop .addreview .ratinglayer{
+    background: lavender;
+    border: 2px solid lavender;
+    padding: 10px;
+}
+.mainshop .addreview{
+    background:moccasin;
+    padding: 20px;
+    border:2px solid moccasin;
+}
+.mainshop .descri {
+    background: lavender;
+}
+.mainshop .descri h2,h3{
+    margin-left:30px;
+}
+
+.mainshop{
+    background:khaki;
+}
+#mapid { height: 480px; }
+.zoomin img {
+    height: 300px;
+    width: 100%;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+  }
+  .zoomin img:hover {
+    width: 110%;
+    height: 350px;
+  }
+.images img{
+    width: 190px;
+    height: 190px;
+    margin:5px;
+    border-radius: 30px;
+}
+.images{
+    background:moccasin;
+    border:2px solid moccasin;
+}

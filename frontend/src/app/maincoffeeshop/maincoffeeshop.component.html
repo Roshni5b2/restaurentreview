@@ -1,0 +1,77 @@
+<div class="zoomin">
+<img src="../../assets/img/bannerrest1.jpg" alt="banner">
+</div>
+<h1 style="color: rgb(230, 227, 103);text-align: center;font-size: 40px;font-family: sans-serif;font-style: italic;">Welcome to {{coffeebar.name}}</h1><br>
+<div class="mainshop">
+  <mat-card>
+  <div class="descri">
+    <br>
+<h2><b>Description:</b>{{coffeebar.description}}</h2><br>
+<h3><b>Rating:</b>{{coffeebar.rating}}</h3>
+<h3><b>Open Timings:</b>{{coffeebar.opentimings}}</h3>
+<h3><b>Contact Number:</b>{{coffeebar.contactnumber}}</h3>
+<h3><b>Email Id:</b>{{coffeebar.emailid}}</h3>
+<br>
+</div>
+</mat-card>
+<!--Review form-->
+<mat-card>
+<div class="addreview">
+  <button (click)="toggleCollapse()" class="reviewing">Leave a Review</button>
+            <div *ngIf="!isCollapsed" >
+                <form>
+                    <input type="text" placeholder="Leave a Review" #review required [pattern]="reviewRegex"/>
+                    
+                    <input type="submit" (click)="addreview(coffeebar._id,userDetails.fullname,review.value)">
+                </form>
+            </div> 
+<br><br>
+<button (click)="ratedivdsipaly()" class="ratinglayer">RATE</button>
+            <div *ngIf="!ratediv" class="ratinglayer" style="background-color: white; width: 100%; padding:1%; margin-top: 2%; margin: 1%; color:black; border-radius: 10px;">
+                <h2>RATE HERE</h2>
+                <form>
+                    <!-- <h3 style="color: black;">{{slider.value}}</h3> -->
+                  <mat-slider 
+                        class="example-margin"
+                        [disabled]=false
+                        [invert]="invert"
+                        [max]="max"
+                        [min]="min"
+                        [step]="step"
+                        [thumbLabel]="thumbLabel"
+                        [tickInterval]="getSliderTickInterval()"
+                        [vertical]="vertical" #slider
+                        >
+                    </mat-slider> 
+                    <input type="submit" (click)="rateadd(slider.value,coffeebar._id)" />
+                </form>
+            
+            </div>
+          </div>
+</mat-card>
+</div>
+<mat-card>
+  <div class="review">
+  <h3><b>Reviews:</b><br></h3>
+  <div *ngFor="let config of reviewlayout; let i = index">
+    <p style="font-size: 15px; ">
+      
+        <b style="border-left: 2px double wheat;margin-left: 20px;"><i><mat-icon style="color: cornflowerblue;">forum</mat-icon>{{reviewlayout[i]}}</i></b>
+    </p>
+  </div>
+  <h3><b>Rating:</b>{{coffeebar.rating}}</h3>
+  </div>
+  </mat-card>
+<mat-card>
+<div class="images">
+   <img src="../../assets/img/food1.jpg" alt="food1">
+   <img src="../../assets/img/food2.jpg" alt="food2">
+   <img src="../../assets/img/food3.jpg" alt="food3">
+   <img src="../../assets/img/food4.jpg" alt="food4">
+   <img src="../../assets/img/food5.jpg" alt="food5">
+   <h3><b>Items With Price:</b><b>{{coffeebar.itemswithprice}}<br/></b></h3>
+</div>
+</mat-card>
+<br>
+<h1 style="text-align: center;color: lime;"><b><i>Locate Your Restaurant Here!!</i></b></h1><br>
+<div id="mapid"></div><br>

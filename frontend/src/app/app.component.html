@@ -1,0 +1,71 @@
+<div class="allpage">
+  <mat-toolbar style="color: chocolate;">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <img src="/assets/img/thefoodcraving.png" style="width: 225px;height: 200px;">
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <a mat-button [routerLink]="['/coffeebars']" routerLinkActive="active">Home</a>
+        <a mat-button [routerLink]="['/login']" routerLinkActive="active">signup/Login</a>
+        <a mat-button [routerLink]="['/menu']" routerLinkActive="active">Menu</a>
+        <a mat-button [routerLink]="['/about']" routerLinkActive="active">Aboutus</a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+        <a mat-list-item [routerLink]="['/coffeebars']" routerLinkActive="active">Home</a>
+        <a mat-list-item [routerLink]="['/login']" routerLinkActive="active">signup/Login</a>
+        <a mat-list-item [routerLink]="['/menu']" routerLinkActive="active">Menu</a>
+        <a mat-list-item [routerLink]="['/about']" routerLinkActive="active">Aboutus</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill><div class="mypages"><router-outlet></router-outlet></div>
+      <div>
+        <footer class="site-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h1 style="margin-left: 110px;">Contact Us</h1>
+                <div class="contact">
+                <a><h3><mat-icon>phone</mat-icon>+91 9876543210</h3></a><br>
+                <a><h3><mat-icon>email</mat-icon>thefoodcravings@gmail.com</h3></a>
+                </div>
+              </div>
+              <div class="myiconimage">
+                <img src="../assets/img/thefoodcraving.png" alt="myIcon">
+              </div>
+              <div class="col-xs-6 col-md-3">
+                <div class="mylinks">
+                <h6 style="color:#81e4bb;"><b>Quick Links</b></h6>
+                <ul class="footer-links">
+                  <li><a [routerLink]="['/coffeebars']" routerLinkActive="active">HOME</a></li>
+                  <li><a [routerLink]="['/login']" routerLinkActive="active">SIGNUP/LOGIN</a></li>
+                  <li><a [routerLink]="['/menu']" routerLinkActive="active">MENU</a></li>
+                  <li><a [routerLink]="['/about']" routerLinkActive="active">ABOUTUS</a></li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by TheFoodCravings
+                </p>
+              </div>
+        
+            </div>
+          </div>
+        </footer> 
+        </div>
+      </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

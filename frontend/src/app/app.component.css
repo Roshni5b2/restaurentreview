@@ -1,0 +1,199 @@
+.allpage{
+  height: 89vh;
+}
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+a {
+    color: black;
+    font-size: 15px;
+    margin-right: 7px;
+    font-style: bold;
+}
+.mypages {
+  background-image:url("../assets/img/restaurent07.jpg");
+  background-size: 100%;
+  background-position: inherit;
+}
+
+.container{
+  margin-left: 5%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+
+.mat-toolbar.primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.site-footer
+{
+  background-color:rgb(225, 150, 228);
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#523524;
+}
+
+.mylinks{
+  float:right;
+  margin-top: -150px;
+  margin-right: 180px;
+}
+
+.contact
+{
+  margin-left: 110px;
+  color:#523524;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5;
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#523524;
+}
+.site-footer a:hover
+{
+  color:#b6cd3c;
+  text-decoration:none;
+}
+.myiconimage img{
+  width:170px;
+  height: 170px;
+  float:right;
+  margin-top: -170px;
+  margin-right: 520px;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#523524;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#b6cd3c;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.copyright-text{
+  text-align: center;
+}
+@media screen and (max-width:760px){
+  .allpage{
+    height: 94vh;
+  }
+  a {
+    color: #523524;
+    font-size: 15px;
+    margin-right: 7px;
+    font-style: bold;
+}
+
+
+
+.mat-toolbar.primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.myiconimage img{
+  width:170px;
+  height: 170px;
+}
+.site-footer
+{
+  background-color:peru;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5;
+  margin-top:170px;
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#523524;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#523524;
+}
+.site-footer a:hover
+{
+  color:#b6cd3c;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+}
+.mylinks{
+  margin-top:10px;
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#523524
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#b6cd3c;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.copyright-text{
+  color: #523524;
+}
+}

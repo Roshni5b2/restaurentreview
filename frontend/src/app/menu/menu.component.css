@@ -1,0 +1,52 @@
+#coffeebar1,#coffeebar2,#coffeebar3,#coffeebar4,#coffeebar5,#coffeebar6,#coffeebar7,#coffeebar8,#coffeebar9,#coffeebar10{
+    max-width: 300px;
+    margin-top: 30px;
+    margin-left: 70px;
+    float:left;
+  }
+  #coffeebar4,#coffeebar9{
+    margin-left: 270px;
+  }
+  #coffeebar5,#coffeebar10{
+    margin-left: 70px;
+  }
+  mat-card-title{
+    margin-left: 60px;
+  }
+  button mat-button{
+    margin-left: 60px;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .container img{
+    width: 250px;
+    height: 250px;
+    margin:23px;
+    border-radius: 30px;
+}
+.container h1{
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+@media only screen and (min-width:320px) and (max-width:760px){
+.container .row img{
+  margin-left: 50px;
+}
+.container img{
+  width: 350px;
+  height: 350px;
+  margin:23px;
+  border-radius: 30px;
+}
+
+}

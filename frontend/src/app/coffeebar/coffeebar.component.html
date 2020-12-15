@@ -1,0 +1,43 @@
+<div class="coffeep">
+  <div class="form-group">
+    <div class="bannerm">
+    <button mat-button style="float: right;background:#523524;"><a [routerLink]="['/map']" routerLinkActive="active">Go to MapLayout!!</a></button>
+    <input type="text" class="form-control" placeholder="Search here" style="width: 200px;height:30px;border-radius: 30px;float: right;" [(ngModel)]="searchbar" required><br><br><br>
+    <button mat-button style="float: right;background:#a38675;margin-right: 10;"><a [routerLink]="['/userprofile']" routerLinkActive="active">My Profile</a></button>
+  </div>
+</div>
+
+<!-- cafe1 -->
+<div class="container">
+  <div class="row">
+<div *ngFor="let cafe of coffeebar | coffeebarFilter:searchbar" class="mycardshere">
+<mat-card>
+    <mat-card-header>
+        <!--title-->
+      <mat-card-title>{{ cafe.name }}</mat-card-title>
+    </mat-card-header>
+    <!--image-->
+    <img mat-card-image src="../../assets/img/restaurent05.jpg" alt="Photo of a Coffee Hut">
+      <mat-card-content>
+      <p>
+        {{ cafe.description }}
+      </p>
+      <h5><b>Opentimings:</b> {{ cafe.opentimings }}.</h5>
+      <h5><b>Contactnumber:</b> {{ cafe.contactnumber }}</h5>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button routerLink="/coffeebars/{{cafe._id}}">Show more</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+</div>
+</div>
+<div class="myfooter">
+  
+</div>
+</div>
+
+
+
+
+<!--coffeebar1 ends-->
